@@ -1,6 +1,6 @@
 +++
 title = "Files and Dirs"
-date = "2020-10-04"
+weight = 80
 +++
 
 # Files and Directories

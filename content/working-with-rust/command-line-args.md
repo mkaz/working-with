@@ -1,6 +1,6 @@
 +++
 title = "Command-line args"
-date = "2020-10-06"
+weight = 100
 +++
 
 # Command-line Args

@@ -1,6 +1,6 @@
 +++
 title = "Hello World"
-date = "2020-10-03"
+weight = 10
 +++
 
 # Hello World

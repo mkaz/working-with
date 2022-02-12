@@ -1,6 +1,6 @@
 +++
 title = "Loops"
-date = "2020-10-03"
+weight = 70
 +++
 
 # Loops

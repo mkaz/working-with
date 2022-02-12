@@ -1,6 +1,6 @@
 +++
 title = "Conditionals"
-date = "2020-10-03"
+weight = 60
 +++
 
 # Conditionals

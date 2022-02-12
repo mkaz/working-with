@@ -1,6 +1,6 @@
 +++
 title = "Functions"
-date = "2020-10-03"
+weight = 50
 +++
 
 # Working with Functions

@@ -1,8 +1,7 @@
 +++
 title = "Working with Rust"
 section = "working-with-rust/_index.md"
-sort_by = "title"
-weight = 50
+sort_by = "weight"
 +++
 
 # Working with Rust

@@ -1,6 +1,6 @@
 +++
 title = "Vectors"
-date = "2020-10-03"
+weight = 40
 +++
 
 # Working with Vectors
