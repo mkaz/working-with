@@ -21,7 +21,7 @@ hello/
 
 The stubbed `main.rs` source file looks like:
 
-```rust
+```rs
 fn main() {
     println!("Hello, world!");
 }

@@ -9,7 +9,7 @@ The common array type in Rust is called a vector, defined as `Vec<T>` with `T` r
 
 ## Initialize Vectors
 
-```rust
+```rs
 let mut v: Vec<i32> = Vec::new();
 v.push(1);
 v.push(2);
@@ -19,7 +19,7 @@ v.push(2);
 
 If Rust can figure it out, it will automatically create the type based on the full program, so you don't always have to specify the type. The following is equivalent to the above:
 
-```rust
+```rs
 let mut v = Vec::new();
 v.push(1);
 v.push(2);
@@ -27,7 +27,7 @@ v.push(2);
 
 Use the `vec!()` macro to initialize with values.
 
-```rust
+```rs
 let v = vec!([1, 2]);
 ```
 
@@ -37,7 +37,7 @@ See the [std::vec::Vec documentation](https://doc.rust-lang.org/std/vec/struct.V
 
 ### Loop
 
-```rust
+```rs
 let v = vec![1,2,3,4,5];
 let mut sum = 0;
 for elem in v {
@@ -48,7 +48,7 @@ println!("Sum: {}", sum);
 
 ### Push and Pop
 
-```rust
+```rs
 let mut v = vec![1,2,3];
 v.pop();
 v.push(6);
@@ -61,7 +61,7 @@ println!("V = {:?}", v);
 
 Use `.contains()` to check a vector contains a specific element.
 
-```rust
+```rs
 let v = vec!["A", "warm", "summer", "day"];
 v.contains(&"warm"); //true
 ```
@@ -74,7 +74,7 @@ The `remove_item()` method that would remove by value from a vector is now depre
 
 ### Remove first element from a vector
 
-```rust
+```rs
 let mut v = vec!["A", "warm", "summer", "day"];
 let elem = "summer"; // element to remove
 v.remove(v.iter().position(|x| *x == elem).expect("not found"));
@@ -83,7 +83,7 @@ println!("{:?}", v);
 
 Using `.expect()` above will panic if the element is not found. Here is how you would wrap it in an condition if the element may not exist in the vector.
 
-```rust
+```rs
 let mut v = vec!["A", "warm", "summer", "day"];
 let elem = "summer"; // element to remove
 if let Some(pos) = v.iter().position(|x| *x == elem) {
@@ -96,7 +96,7 @@ println!("{:?}", v);
 
 To remove all elements from a vector in Rust, use `.retain()` method to keep all elements the do not match.
 
-```rust
+```rs
 let mut v = vec!["A", "warm", "fall", "warm", "day"];
 let elem = "warm"; // element to remove
 v.retain(|x| *x != elem);
@@ -105,7 +105,7 @@ println!("{:?}", v);
 
 Use the same technique with `.retain()` to match against other criteria, for example this test for even numbers.
 
-```rust
+```rs
 let mut v = vec![1,2,3,4,5,6,7,8,9];
 v.retain(|x| *x % 2 == 0);
 println!("{:?}", v); // even numbers

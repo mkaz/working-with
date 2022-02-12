@@ -3,13 +3,15 @@ title = "Testing"
 date = "2020-10-04"
 +++
 
+# Testing
+
 An example creating a unit test in Rust. See the [How to Write Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html) section of the Rust book, and the [Unit testing](https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html) section of Rust by Example for additional details.
 
 ## Unit Test
 
 To write a text, prefix a function with the `#[test]` annotation. You can then use `cargo test` to run the test to confirm all the assertions are valid within that function.
 
-```rust
+```rs
 fn main() {
     let sum = add( 3, 5 );
     println!("Sum: {}", sum);

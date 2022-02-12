@@ -21,13 +21,13 @@ project/
 
 **Note:** The file `pumpkin.rs` is the module code to be used within `main.rs`.
 
-```rust
+```rs
 pub fn greet(s: &str) -> {
     println!("Happy Halloween {}", s);
 }
 ```
 
-```rust
+```rs
 mod october;
 
 fn main() {

@@ -11,7 +11,7 @@ A set of examples using functions in Rust.
 
 The input parameters for a function must define the required incoming type.
 
-```rust
+```rs
 fn main() {
     add(2, 3);
 }
@@ -26,7 +26,7 @@ fn add(x: i32, y: i32) {
 
 The return result for a function must define the type. Here's an example using an explicit return.
 
-```rust
+```rs
 fn main() {
     let x = 2;
     let y = 3;
@@ -42,7 +42,7 @@ fn add(x: i32, y: i32) -> i32 {
 
 In Rust, the result of the last line of a function without a closing semi-colon will be used for the return value. So the `add()` function above could be simplified to:
 
-```rust
+```rs
 fn add(x: i32, y: i32) -> i32 {
     x + y
 }
@@ -52,7 +52,7 @@ fn add(x: i32, y: i32) -> i32 {
 
 You can return multiple values from a function using [tuples](https://doc.rust-lang.org/stable/std/primitive.tuple.html). A tuple is a collection of variables of different types. A tuple is constructed using parentheses and can hold any number of values.
 
-```rust
+```rs
 fn main() {
     let names = parse_name("Marcus Kazmierczak");
     println!("First: {}", names.0);
@@ -69,7 +69,7 @@ fn parse_name(s: &str) -> (&str, &str) {
 
 Rust will treat anything within `{ }` as a block expression, this applies to functions, but you can also use it without functions.
 
-```rust
+```rs
 fn main() {
 
 let x = 5;
@@ -89,7 +89,7 @@ let x = 5;
 
 You can define functions inside other functions.
 
-```rust
+```rs
 fn main() {
     fn add(x: i32, y: i32) -> i32 {
         x + y
@@ -102,7 +102,7 @@ fn main() {
 
 You can create a function that returns another function, this allows creating higher order functions and currying.
 
-```rust
+```rs
 fn main() {
 
     fn add(x: i32) -> impl Fn(i32) -> i32 {

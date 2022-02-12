@@ -7,7 +7,7 @@ date = "2020-10-06"
 
 An example parsing command-line arguments in Rust. Rust does not have a great standard library for parsing command-line arguments. You can use the `std::env` package to grab the list, [reference documentation](https://doc.rust-lang.org/std/env/).
 
-```rust
+```rs
 use std::env;
 
 fn main() {
@@ -18,7 +18,7 @@ fn main() {
 
 This is useful if you have a simple program, for example just reading a single filename in and no options or other flags.
 
-```rust
+```rs
 use std::env;
 use std::fs;
 
@@ -45,7 +45,7 @@ The external create I prefer to use for command-line parsing is [clap](https://d
 
 To use an external create add `clap = "3.0.0-beta.2"` under the dependency section in `Cargo.toml`. The next time you run `cargo run|test` it will install.
 
-```rust
+```rs
 use clap::{Arg,App};
 
 fn main() {

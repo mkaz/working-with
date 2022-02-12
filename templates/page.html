@@ -11,14 +11,18 @@
                 {% set parent = page.ancestors | last %}
                 {% set parent_section = get_section(path=parent) %}
                 {% for page in parent_section.pages %}
-                    <li> {{ page.title }} </li>
+                    <li><a href="{{ page.permalink }}">{{ page.title }} </a></li>
                 {% endfor %}
             </ul>
         </nav>
     </aside>
 
     <article>
+
+        <h3 class="section-title"> {{ parent_section.title }} </h3>
+
         {{ page.content | safe }}
+
     </article>
 
 {% endblock main %}

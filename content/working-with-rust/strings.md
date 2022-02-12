@@ -11,14 +11,14 @@ A `String` type is stored as a vector of valid UTF-8 characters and is growable.
 
 There are a lot of details in there that can confuse you when you start, the best way I found learning is to pay attention to the types functions use, read the compiler messages, and just dive in and play around with them.
 
-```rust
+```rs
 let str = "Hi I'm a &str type";
 let string = String::from("Hi, I'm a String type");
 ```
 
 You can use `.to_string()` to convert a `&str` to `String`
 
-```rust
+```rs
 let s = "A string".to_string();
 ```
 
@@ -26,7 +26,7 @@ let s = "A string".to_string();
 
 `String` is a growable type, so you can push to it to concatenate and join strings together. Here are two examples, one adding a space char, and then joining a string.
 
-```rust
+```rs
 let mut str = String::from("Hola");
 str.push(' ');
 str.push_str("Mundo");
@@ -34,7 +34,7 @@ str.push_str("Mundo");
 
 You can also join strings in Rust using the `+` operator, but that only works with `&str` types:
 
-```rust
+```rs
 let mut str = "Hola".to_string();
 str = str + " mundo";
 ```
@@ -47,20 +47,20 @@ See the [std::string::String documentation](https://doc.rust-lang.org/std/string
 
 ### Create Empty String
 
-```rust
+```rs
 let s = String::new();
 ```
 
 ### Length of String
 
-```rust
+```rs
 let str = "abcdefghijklmnopqrstuvwxyz";
 let size = str.len();
 ```
 
 ### Check for Empty String
 
-```rust
+```rs
 let s = String::new();
 s.is_empty(); // true
 
@@ -72,7 +72,7 @@ s.is_empty(); // false
 
 Technically a string is already a vector, but of bytes and not really characters, because UTF-8 bytes and characters are not 1:1. You can use `.chars()` method to return an iterator.
 
-```rust
+```rs
 let str = "abcdefghijklmnopqrstuvwxyz";
 
 for ch in str.chars() {
@@ -82,7 +82,7 @@ for ch in str.chars() {
 
 As mentioned, the `.chars()` method returns an iterator, and not a vector on its own. You can see this trying to get the length:
 
-```rust
+```rs
 let str = "abcdefghijklmnopqrstuvwxyz";
 let chars = str.chars();
 println!("{}", str.len()); // 26
@@ -91,7 +91,7 @@ println!("{}", chars.len()); // error!
 
 If you want a vector of characters, use `.collect()` which collects everything in the iterator up and creates vector.
 
-```rust
+```rs
 let str = "abcdefghijklmnopqrstuvwxyz";
 let chars:Vec<char> = str.chars().collect();
 println!("{}", chars.len());
@@ -99,7 +99,7 @@ println!("{}", chars.len());
 
 ## Split Strings
 
-```rust
+```rs
 
 let str = "A beginning is a delicate time";
 let v: Vec<&str> = str.split(" ").collect();
@@ -111,7 +111,7 @@ println!("{:?}", v);
 
 Use `.trim()` to trim whitespace.
 
-```rust
+```rs
 let str = "  Hola mundo  ";
 str.trim(); // "Hola mundo"
 ```
@@ -120,7 +120,7 @@ str.trim(); // "Hola mundo"
 
 Use `.starts_with()` and `.ends_with()` to test or starting/ending with a specific string;
 
-```rust
+```rs
 let str = "Without change something sleeps inside us";
 str.starts_with("Without"); // true
 str.ends_with("us");        // true
@@ -128,7 +128,7 @@ str.ends_with("us");        // true
 
 Use `.strip_prefix()` and `.strip_suffix()` to remove a prefix or suffix.
 
-```rust
+```rs
 let mut str = "<b>Bold text</b>";
 str = str.strip_prefix("<b>").unwrap();
 str = str.strip_suffix("</b>").unwrap();
@@ -139,7 +139,7 @@ println!("{}", str);\
 
 Use `.replace()` to replace a string.
 
-```rust
+```rs
 let s1 = "A wall against the wind.";
 let s2 = s1.replace("wall", "feather").replace("against", "in");
 println!("{}", s2);

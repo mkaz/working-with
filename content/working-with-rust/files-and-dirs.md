@@ -11,7 +11,7 @@ A set of examples working with files and directories in Rust. See the standard m
 
 An example reading a file in to a single string.
 
-```rust
+```rs
 use std::fs;
 
 fn main() {
@@ -21,7 +21,7 @@ fn main() {
 
 To loop through a file line by line, you can read the entire file in like above, and then use `.lines()` to create an iterator you can loop over.
 
-```rust
+```rs
 use std::fs;
 
 fn main() {
@@ -36,7 +36,7 @@ fn main() {
 
 Use [std::path::Path](https://doc.rust-lang.org/std/path/struct.Path.html) to create a path and check if it exists.
 
-```rust
+```rs
 use std::path::Path;
 fn main() {
     let path = Path::new("filename.txt");
@@ -52,7 +52,7 @@ fn main() {
 
 An example in creating a writing data to a file in Rust.
 
-```rust
+```rs
 use std::fs::File;
 
 fn main() {
@@ -64,7 +64,7 @@ fn main() {
 
 Here is a more complete example for writing to a file including error handling.
 
-```rust
+```rs
 use std::fs::File;
 use std::io::prelude::*;
 use std::path::Path;

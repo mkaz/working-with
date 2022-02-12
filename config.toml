@@ -3,8 +3,11 @@ base_url = "https://mkaz.blog/"
 title = "mkaz.blog"
 
 compile_sass = true
-highlight_code = true
 build_search_index = false
+
+[markdown]
+highlight_code = true
+highlight_theme = "agola-dark"
 
 [extra]
 # Custom Variables

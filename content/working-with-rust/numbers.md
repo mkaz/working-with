@@ -9,7 +9,7 @@ Rust is a typed language, every variable must specify its type. The common numbe
 
 ## Basic Math
 
-```rust
+```rs
 fn main() {
     let x = 3;
     let y = 6;
@@ -24,14 +24,14 @@ fn main() {
 
 To convert a string to an integer in Rust, use `parse()` function. The parse function needs to know what type, which can be specified on the left-side of assignment like so:
 
-```rust
+```rs
 let str = "123";
 let num: i32 = str.parse().unwrap();
 ```
 
 You can also specify the parse type inline, using `::<>` syntax:
 
-```rust
+```rs
 let str = "123";
 let num = str.parse::<i32>().unwrap();
 ```
@@ -42,7 +42,7 @@ let num = str.parse::<i32>().unwrap();
 
 To convert a string to a float in Rust, uses the same `parse()` function. You just specify `f64` for the type.
 
-```rust
+```rs
 let pi = "3.14159";
 let num: f64 = pi.parse().unwrap()
 ```
@@ -51,12 +51,12 @@ let num: f64 = pi.parse().unwrap()
 
 To convert a single char to an integer in Rust, use `.to_digit(RADIX)`. The radix value is used for conversion, 10 for decimal, 16 for hexadecimal.
 
-```rust
+```rs
 let ch = '2';
 let num = ch.to_digit(10).unwrap();
 ```
 
-```rust
+```rs
 let ch = 'f';
 let num = ch.to_digit(16).unwrap();
 println!("{}", num);
@@ -67,7 +67,7 @@ println!("{}", num);
 
 To convert an integer to a string in Rust, use `.to_string()`
 
-```rust
+```rs
 let num = 123;
 let str = num.to_string();
 ```
@@ -76,7 +76,7 @@ let str = num.to_string();
 
 To convert an integer to a float in Rust, use `as f64`. This is a useful means to convert from various interchangeable types, you can use inline also.
 
-```rust
+```rs
 let num = 13;
 let flt = num as f64;
 println!("{}", 1.2 * flt);
