@@ -2,10 +2,23 @@
 
 {% block title %}{{ page.title }} | {{ config.title }} {% endblock title %}
 
-{% block content %}
+{% block main %}
 
-    <h1>{{page.title}}</h1>
+    <aside>
+        <nav>
+            <h3> Contents </h3>
+            <ul>
+                {% set parent = page.ancestors | last %}
+                {% set parent_section = get_section(path=parent) %}
+                {% for page in parent_section.pages %}
+                    <li> {{ page.title }} </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </aside>
 
-    {{page.content | safe}}
+    <article>
+        {{ page.content | safe }}
+    </article>
 
-{% endblock content %}
+{% endblock main %}

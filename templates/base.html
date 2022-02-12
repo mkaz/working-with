@@ -18,23 +18,8 @@
         </header>
 
         <main>
-            <aside>
-                <nav>
-                    <h3> Contents </h3>
-                    <ul>
-                        {% set section = get_section(path="_index.md") %}
-                        {% for sub in section.subsections %}
-                            {% set subdata  = get_section(path=sub) %}
-                            <li><a href="{{ subdata.permalink }}">{{ subdata.title }} </a></li>
-                        {% endfor %}
-                    </ul>
-                </nav>
-            </aside>
-
-            <article>
-                {% block content %}
-                {% endblock content %}
-            </article>
+                {% block main %}
+                {% endblock main %}
         </main>
 
         <footer>
