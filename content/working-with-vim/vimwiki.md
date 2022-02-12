@@ -1,6 +1,6 @@
 +++
 title = "VimWiki"
-date = "2020-02-03"
+weight = 220
 +++
 
 # VimWiki

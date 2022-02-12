@@ -1,6 +1,6 @@
 +++
 title = "Text Objects"
-date = "2020-02-03"
+weight = 80
 +++
 
 # Text Object Selection

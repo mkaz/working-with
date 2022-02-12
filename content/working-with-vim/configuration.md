@@ -1,6 +1,6 @@
 +++
 title = "Configuration"
-date = "2020-02-03"
+weight = 170
 +++
 
 # Vimrc

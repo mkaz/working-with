@@ -1,6 +1,6 @@
 +++
 title = "Plugins"
-date = "2020-02-03"
+weight = 180
 +++
 
 # Plugin Management

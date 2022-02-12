@@ -1,6 +1,6 @@
 +++
 title = "Introduction"
-date = "2020-02-03"
+weight = 10
 +++
 
 # Introduction

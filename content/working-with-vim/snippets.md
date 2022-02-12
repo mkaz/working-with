@@ -1,6 +1,6 @@
 +++
 title = "Snippets"
-date = "2020-02-03"
+weight = 190
 +++
 
 # Snippets

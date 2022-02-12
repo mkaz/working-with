@@ -1,6 +1,6 @@
 +++
 title = "The Tao of Vim"
-date = "2020-02-03"
+weight = 40
 +++
 
 # The Tao of Vim

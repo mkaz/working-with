@@ -1,6 +1,6 @@
 +++
 title = "Writing"
-date = "2020-02-03"
+weight = 210
 +++
 
 ## Vim for Writing

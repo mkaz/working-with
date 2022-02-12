@@ -1,6 +1,6 @@
 +++
 title = "Lines"
-date = "2020-02-03"
+weight = 70
 +++
 
 # Working with Lines

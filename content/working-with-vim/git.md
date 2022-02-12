@@ -1,6 +1,6 @@
 +++
 title = "Git"
-date = "2020-02-03"
+weight = 230
 +++
 
 # Git Integration
