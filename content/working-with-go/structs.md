@@ -1,6 +1,6 @@
 +++
 title = "Structs"
-date = "2020-02-03"
+weight = 80
 +++
 
 # Working with Structs

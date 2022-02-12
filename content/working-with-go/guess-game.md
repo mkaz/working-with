@@ -1,6 +1,6 @@
 +++
 title = "Guess Game"
-date = "2020-02-03"
+weight = 170
 +++
 
 # Guessing Game

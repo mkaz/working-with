@@ -1,6 +1,6 @@
 +++
 title = "Sorting"
-date = "2020-02-03"
+weight = 140
 +++
 
 # Sorting Arrays and Maps

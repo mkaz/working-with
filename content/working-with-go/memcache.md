@@ -1,6 +1,6 @@
 +++
 title = "Memcache"
-date = "2020-02-03"
+weight = 200
 +++
 
 # Storing Objects in Memcache

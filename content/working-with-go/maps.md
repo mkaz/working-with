@@ -1,6 +1,6 @@
 +++
 title = "Maps"
-date = "2020-02-03"
+weight = 90
 +++
 
 # Working with Maps

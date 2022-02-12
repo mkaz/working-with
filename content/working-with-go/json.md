@@ -1,6 +1,6 @@
 +++
 title = "JSON"
-date = "2020-02-03"
+weight = 150
 +++
 
 # Working with JSON

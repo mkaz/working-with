@@ -1,6 +1,6 @@
 +++
 title = "Date and Time"
-date = "2020-02-03"
+weight = 130
 +++
 
 # Working with Date and Time

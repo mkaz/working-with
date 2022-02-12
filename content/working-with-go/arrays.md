@@ -1,6 +1,6 @@
 +++
 title = "Arrays"
-date = "2020-02-03"
+weight = 40
 +++
 
 # Working with Slices

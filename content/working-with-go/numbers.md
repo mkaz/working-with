@@ -1,6 +1,6 @@
 +++
 title = "Numbers"
-date = "2020-02-03"
+weight = 30
 +++
 
 # Working with Numbers

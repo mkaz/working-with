@@ -1,6 +1,6 @@
 +++
 title = "Files"
-date = "2020-02-03"
+weight = 100
 +++
 
 # Working with Files

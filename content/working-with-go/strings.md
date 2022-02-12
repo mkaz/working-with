@@ -1,6 +1,6 @@
 +++
 title = "Strings"
-date = "2020-02-03"
+weight = 20
 +++
 
 # Working with Strings

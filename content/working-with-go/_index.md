@@ -1,8 +1,7 @@
 +++
 title = "Working with Go"
 section = "working-with-go/_index.md"
-sort_by = "title"
-weight = 50
+sort_by = "weight"
 +++
 
 # Working with Go
