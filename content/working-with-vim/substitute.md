@@ -1,7 +1,7 @@
----
-title: "Substitute"
-date: "2020-02-03"
----
++++
+title = "Substitute"
+date = "2020-02-03"
++++
 
 # Substitute
 

@@ -1,7 +1,7 @@
----
-title: "Recording"
-date: "2020-02-03"
----
++++
+title = "Recording"
+date = "2020-02-03"
++++
 
 # Recording and Playback
 

@@ -1,7 +1,7 @@
----
-title: "Nav Marks"
-date: "2020-02-03"
----
++++
+title = "Nav Marks"
+date = "2020-02-03"
++++
 
 # Navigation Marks
 

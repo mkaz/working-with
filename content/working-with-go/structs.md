@@ -1,7 +1,7 @@
----
-title: "Structs"
-date: "2020-02-03"
----
++++
+title = "Structs"
+date = "2020-02-03"
++++
 
 # Working with Structs
 

@@ -1,7 +1,7 @@
----
-title: "Lines"
-date: "2020-02-03"
----
++++
+title = "Lines"
+date = "2020-02-03"
++++
 
 # Working with Lines
 

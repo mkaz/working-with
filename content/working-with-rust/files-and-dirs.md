@@ -1,7 +1,7 @@
----
-title: "Files and Dirs"
-date: "2020-10-04"
----
++++
+title = "Files and Dirs"
+date = "2020-10-04"
++++
 
 # Files and Directories
 

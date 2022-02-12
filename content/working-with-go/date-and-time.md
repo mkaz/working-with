@@ -1,7 +1,7 @@
----
-title: "Date and Time"
-date: "2020-02-03"
----
++++
+title = "Date and Time"
+date = "2020-02-03"
++++
 
 # Working with Date and Time
 
@@ -92,7 +92,7 @@ user_date, err := time.Parse(input_format, user_str)
 if err != nil {
     fmt.Println(">>> Error parsing date string")
 }
-fmt.Println("User Date: ", user_date.Format("Jan 2, 2006 @ 3:04pm"))
+fmt.Println("User date = ", user_date.Format("Jan 2, 2006 @ 3:04pm"))
 ```
 
 ## Date/Time Comparisons

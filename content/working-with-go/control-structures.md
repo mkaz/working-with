@@ -1,7 +1,7 @@
----
-title: "Control Structures"
-date: "2020-02-03"
----
++++
+title = "Control Structures"
+date = "2020-02-03"
++++
 
 # Control Structures
 

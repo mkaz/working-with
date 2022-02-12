@@ -1,7 +1,7 @@
----
-title: "Guess Game"
-date: "2020-02-03"
----
++++
+title = "Guess Game"
+date = "2020-02-03"
++++
 
 # Guessing Game
 

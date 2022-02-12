@@ -1,7 +1,7 @@
----
-title: "MySQL"
-date: "2020-02-03"
----
++++
+title = "MySQL"
+date = "2020-02-03"
++++
 
 # Working with MySQL Database
 
@@ -149,7 +149,7 @@ func add() {
 
     insertQuery.Exec(title, body)
 
-    fmt.Println("ADDED: Title: " + title + " | Body: " + body)
+    fmt.Println("ADDED: title = " + title + " | Body: " + body)
 
     defer db.Close()
 
@@ -169,7 +169,7 @@ func update(postId int) {
 
     updateQuery.Exec(title, body, postId)
 
-    fmt.Println("UPDATED: Title: " + title + " | Body: " + body)
+    fmt.Println("UPDATED: title = " + title + " | Body: " + body)
 
     defer db.Close()
 

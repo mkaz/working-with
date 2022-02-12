@@ -1,0 +1,11 @@
+# The URL the site will be built for
+base_url = "https://mkaz.blog/"
+title = "mkaz.blog"
+
+compile_sass = true
+highlight_code = true
+build_search_index = false
+
+[extra]
+# Custom Variables
+author = "Marcus Kazmierczak"

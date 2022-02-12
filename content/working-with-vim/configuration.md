@@ -1,7 +1,7 @@
----
-title: "Configuration"
-date: "2020-02-03"
----
++++
+title = "Configuration"
+date = "2020-02-03"
++++
 
 # Vimrc
 

@@ -1,7 +1,7 @@
----
-title: "Conditionals"
-date: "2020-10-03"
----
++++
+title = "Conditionals"
+date = "2020-10-03"
++++
 
 # Conditionals
 

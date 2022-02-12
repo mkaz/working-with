@@ -1,7 +1,7 @@
----
-title: "Directories"
-date: "2020-02-03"
----
++++
+title = "Directories"
+date = "2020-02-03"
++++
 
 # Directories
 

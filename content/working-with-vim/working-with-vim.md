@@ -1,7 +1,7 @@
----
-title: "Working with Vim"
-date: "2020-02-03"
----
++++
+title = "Working with Vim"
+date = "2020-02-03"
++++
 
 # Working with Vim
 

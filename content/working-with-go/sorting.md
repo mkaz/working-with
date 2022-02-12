@@ -1,7 +1,7 @@
----
-title: "Sorting"
-date: "2020-02-03"
----
++++
+title = "Sorting"
+date = "2020-02-03"
++++
 
 # Sorting Arrays and Maps
 

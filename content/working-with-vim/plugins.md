@@ -1,7 +1,7 @@
----
-title: "Plugins"
-date: "2020-02-03"
----
++++
+title = "Plugins"
+date = "2020-02-03"
++++
 
 # Plugin Management
 

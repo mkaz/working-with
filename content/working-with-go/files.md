@@ -1,7 +1,7 @@
----
-title: "Files"
-date: "2020-02-03"
----
++++
+title = "Files"
+date = "2020-02-03"
++++
 
 # Working with Files
 

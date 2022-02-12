@@ -1,7 +1,7 @@
----
-title: "Testing"
-date: "2020-10-04"
----
++++
+title = "Testing"
+date = "2020-10-04"
++++
 
 An example creating a unit test in Rust. See the [How to Write Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html) section of the Rust book, and the [Unit testing](https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html) section of Rust by Example for additional details.
 

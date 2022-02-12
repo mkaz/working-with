@@ -1,7 +1,7 @@
----
-title: "Text Objects"
-date: "2020-02-03"
----
++++
+title = "Text Objects"
+date = "2020-02-03"
++++
 
 # Text Object Selection
 

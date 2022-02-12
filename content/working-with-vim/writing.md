@@ -1,7 +1,7 @@
----
-title: "Writing"
-date: "2020-02-03"
----
++++
+title = "Writing"
+date = "2020-02-03"
++++
 
 ## Vim for Writing
 

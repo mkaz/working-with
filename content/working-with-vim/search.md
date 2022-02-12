@@ -1,7 +1,7 @@
----
-title: "Search"
-date: "2020-02-03"
----
++++
+title = "Search"
+date = "2020-02-03"
++++
 
 # Search
 

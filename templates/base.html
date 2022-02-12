@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="{{ config.extra.author }}">
+        <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+        <link rel="stylesheet" href="{{ get_url(path="site.css") }}"/>
+        <link rel="icon" href="{{ get_url(path="favicon.ico") }}">
+    </head>
+    <body>
+
+        <header>
+            <h3>
+				<a href="{{ config.base_url }}">{{ config.title }}</a>
+            </h3>
+        </header>
+
+        <main>
+            <aside>
+                <nav>
+                    <h3> Contents </h3>
+                    <ul>
+                        {% set section = get_section(path="_index.md") %}
+                        {% for sub in section.subsections %}
+                            {% set subdata  = get_section(path=sub) %}
+                            <li><a href="{{ subdata.permalink }}">{{ subdata.title }} </a></li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </aside>
+
+            <article>
+                {% block content %}
+                {% endblock content %}
+            </article>
+        </main>
+
+        <footer>
+            An <a class="white" href="https://mkaz.blog">mkaz</a> depot.
+        </footer>
+
+    </body>
+</html>

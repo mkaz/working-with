@@ -1,7 +1,7 @@
----
-title: "Web Server"
-date: "2020-02-03"
----
++++
+title = "Web Server"
+date = "2020-02-03"
++++
 
 # Web Server
 

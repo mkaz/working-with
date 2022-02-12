@@ -1,7 +1,7 @@
----
-title: "Modes"
-date: "2020-02-03"
----
++++
+title = "Modes"
+date = "2020-02-03"
++++
 
 # Modes
 

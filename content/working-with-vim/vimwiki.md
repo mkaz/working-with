@@ -1,7 +1,7 @@
----
-title: "VimWiki"
-date: "2020-02-03"
----
++++
+title = "VimWiki"
+date = "2020-02-03"
++++
 
 # VimWiki
 
@@ -73,7 +73,7 @@ Use `:VimwikiTable 5 3` to create a table with 5 columns and 2 rows
 
 ```markdown
 |   |   |   |   |   |
-|---|---|---|---|---|
+|+++|+++|+++|+++|+++|
 |   |   |   |   |   |
 |   |   |   |   |   |
 ```

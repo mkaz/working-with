@@ -1,7 +1,7 @@
----
-title: "Strings"
-date: "2020-02-03"
----
++++
+title = "Strings"
+date = "2020-02-03"
++++
 
 # Working with Strings
 

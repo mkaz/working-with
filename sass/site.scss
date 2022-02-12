@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+$link-color: #fc4445;
+
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+	font-size: 16px;
+	height: 100%;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	line-height: 1.6;
+	padding: 1rem 2rem;
+
+	color: #333;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: 1px solid rgba(0, 124, 188, 0.25);
+
+	&:hover {
+		border-bottom: 1px solid $link-color;
+	}
+
+	&:visited {
+		color: $link-color;
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 2.0rem 0;
+	line-height: 1.0;
+}
+
+h1 { font-size: 24px; }
+h2 { font-size: 20px; }
+h3 { font-size: 18px; }
+
+header {
+	margin-bottom: 3rem;
+	h3 { margin: 0; }
+}
+
+main {
+	min-height: calc(100vh - 14rem);
+
+	display: flex;
+	flex-grow: 1;
+}
+
+aside {
+	width: 120px;
+	margin-right: 4rem;
+
+	h3 {
+		margin-bottom: 1rem;
+	}
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+		margin: 0.25rem 0 2.0rem 0;
+	}
+
+	.title {
+		font-size: 1.25rem;
+		font-weight: bold;
+	}
+
+	li {
+		padding-top: 0.25rem;
+		padding-bottom: 0.25rem;
+	}
+
+	li.active a {
+		font-weight: bold;
+		border-bottom: 1px solid $link-color;
+	}
+}
+
+footer {
+	margin: 4rem 0 1rem 0;
+}
+
+@media (max-width: 720px) {
+	
+	header {
+		margin-bottom: 2rem;
+	}
+
+	main {
+		display: block;
+		padding-top: 0;
+	}
+
+	aside {
+		width: 100%;
+		margin-bottom: 2rem;
+		margin-right: 0;
+
+		h3 {
+			display: none;
+		}
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 0;
+		}
+		li {
+			width: 7em;
+			margin-right: 2em;
+		}
+	}
+
+}
+
+article {
+	width: 100%;
+	margin: 0;
+
+	// Make things readable and wrap at 36rem
+	// we don't do all because we want images, code to be wide.
+	blockquote, p, li {
+		max-width: 36rem;
+	}
+
+	h2, h3, h4, h5, h6 {
+		margin-top: 2.0rem;
+		margin-bottom: 0;
+	}
+
+	blockquote {
+		border-left: 10px solid black;
+		padding: 0.25rem 0.5rem;
+		margin-left: 0;
+		font-style: italic;
+	}
+}
+
+section {
+	ul {
+		padding-left: 0;
+		list-style: none;
+	}
+
+	li {
+		line-height: 0;
+		margin-bottom: 2.0rem;
+	}
+}
+

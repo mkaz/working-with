@@ -1,7 +1,7 @@
----
-title: "Modules"
-date: "2020-10-08"
----
++++
+title = "Modules"
+date = "2020-10-08"
++++
 
 # Modules
 
@@ -13,10 +13,10 @@ The example uses the following directory structure:
 
 ```
 project/
-|--- Cargo.toml
-|--- src/
-     |--- main.rs
-     |--- october.rs
+|+++ Cargo.toml
+|+++ src/
+     |+++ main.rs
+     |+++ october.rs
 ```
 
 **Note:** The file `pumpkin.rs` is the module code to be used within `main.rs`.
@@ -45,9 +45,9 @@ In the above example, you could move the `october.rs` file to `mod.rs` and place
 
 ```
 project/
-|--- Cargo.toml
-|--- src/
-     |--- main.rs
-     |--- october/
-          |--- mod.rs
+|+++ Cargo.toml
+|+++ src/
+     |+++ main.rs
+     |+++ october/
+          |+++ mod.rs
 ```

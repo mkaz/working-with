@@ -1,7 +1,7 @@
----
-title: "Command-line args"
-date: "2020-10-06"
----
++++
+title = "Command-line args"
+date = "2020-10-06"
++++
 
 # Command-line Args
 

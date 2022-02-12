@@ -1,7 +1,7 @@
----
-title: "Vectors"
-date: "2020-10-03"
----
++++
+title = "Vectors"
+date = "2020-10-03"
++++
 
 # Working with Vectors
 

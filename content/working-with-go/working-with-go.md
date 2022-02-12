@@ -1,7 +1,7 @@
----
-title: "Working with Go"
-date: "2020-02-03"
----
++++
+title = "Working with Go"
+date = "2020-02-03"
++++
 
 # Working with Go
 

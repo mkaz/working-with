@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }} | {{ config.title }} {% endblock title %}
+
+{% block content %}
+<section>
+	{% for sub in section.subsections %}
+		{% set fullpath = current_path ~ "_index.md" %}
+		{% set subpath = "/" ~ sub %}
+
+		{% if subpath == fullpath %}
+			{% set subsection = get_section(path=sub) %}
+			<h1>{{ subsection.title }}</h1>
+			<ul>
+				{% for post in subsection.pages %}
+					<li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+	{% endfor %}
+</section>
+
+{% endblock content %}

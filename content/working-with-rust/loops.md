@@ -1,7 +1,7 @@
----
-title: "Loops"
-date: "2020-10-03"
----
++++
+title = "Loops"
+date = "2020-10-03"
++++
 
 # Loops
 

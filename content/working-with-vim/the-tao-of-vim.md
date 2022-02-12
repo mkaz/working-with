@@ -1,7 +1,7 @@
----
-title: "The Tao of Vim"
-date: "2020-02-03"
----
++++
+title = "The Tao of Vim"
+date = "2020-02-03"
++++
 
 # The Tao of Vim
 
