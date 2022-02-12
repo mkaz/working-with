@@ -1,6 +1,6 @@
 +++
 title = "Search"
-search = 90
+weight = 90
 +++
 
 # Search
