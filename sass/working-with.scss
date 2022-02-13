@@ -251,6 +251,8 @@ input[type=checkbox] {
 		width: calc(100vw - 2rem);
 		position: fixed;
 		z-index: 2;
+
+		overflow-y: scroll;
 		
 		&.active {
 			visibility: visible;
@@ -258,6 +260,7 @@ input[type=checkbox] {
 		
 				
 		ul {
+			position: static;
 			display: flex;
 			align-items: start;
 			flex-direction: column;
