@@ -7,3 +7,4 @@ publish: build
 	rsync -rt ./public/working-with-go/* mkaz@linode-1:/home/mkaz/sites/mkaz.blog/working-with-go/
 	rsync -rt ./public/working-with-rust/* mkaz@linode-1:/home/mkaz/sites/mkaz.blog/working-with-rust/
 	rsync -rt ./public/working-with-vim/* mkaz@linode-1:/home/mkaz/sites/mkaz.blog/working-with-vim/
+	rsync -rt ./public/notes/* mkaz@linode-1:/home/mkaz/sites/mkaz.blog/notes/
