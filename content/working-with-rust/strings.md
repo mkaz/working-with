@@ -118,7 +118,7 @@ str.trim(); // "Hola mundo"
 
 ## String Prefix/Suffix
 
-Use `.starts_with()` and `.ends_with()` to test or starting/ending with a specific string;
+Use `.starts_with()` and `.ends_with()` to test starting/ending with a specific string;
 
 ```rs
 let str = "Without change something sleeps inside us";
@@ -145,3 +145,12 @@ let s2 = s1.replace("wall", "feather").replace("against", "in");
 println!("{}", s2);
 // A feather in the wind
 ```
+
+## Additional functions
+
+Here are a few more useful methods, see the [String documentation for complete list](https://doc.rust-lang.org/std/string/struct.String.html).
+
+- `.contains(Pattern)`
+- `to_lowercase()`
+- `to_uppercase()`
+
