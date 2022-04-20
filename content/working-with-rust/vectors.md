@@ -35,6 +35,14 @@ let v = vec!([1, 2]);
 
 See the [std::vec::Vec documentation](https://doc.rust-lang.org/std/vec/struct.Vec.html#method.retain) for all available methods, here are a few common ones.
 
+
+### Length / Size
+
+```rs
+let v = vec![1,2,3,4,5];
+println!("Size: {}", v.len());
+```
+
 ### Loop
 
 ```rs
@@ -67,6 +75,18 @@ v.contains(&"warm"); //true
 ```
 
 Note the method requires a borrowed copy, hence the `&` in the argument. The compiler will tell you want is needed if you forget.
+
+
+## Get Element at Position
+
+Use `.get(n)` to get the element at position `n` in a vector. Note: This does not return the element itself, since it is possible for an index not found error. So it returns an `Option()` that will need to be unwrapped or handled.
+
+```rs
+let v = vec!["a", "b", "c", "d", "e"];
+let pos: usize = 4;
+println!("{}", v.get(pos).unwrap());
+```
+
 
 ## Remove Element
 
