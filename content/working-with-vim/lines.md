@@ -27,50 +27,68 @@ The change equivalent is `C`, to delete from cursor to end of line, and switch t
 
 ## Line Motions
 
-`0`  
+`0`
 : Go to first column
 
-`^`  
+`^`
 : Go to first printable character
 
-`$`  
+`$`
 : Go to end of line
 
-`g_`  
+`g_`
 : Go to last printable character
 
-`:32` or `32G`  
+`:32` or `32G`
 : Go to line number 32
 
-`gg`  
+`gg`
 : Go to first line in buffer
 
-`G`  
+`G`
 : Go to last line in buffer
 
 ## Line INSERT mode
 
-`o`  
+`o`
 : Add new line below, enter INSERT mode
 
-`O`  
+`O`
 : Add new line above, enter INSERT mode
 
-`I`  
+`I`
 : Enter INSERT mode at start of line
 
-`A`  
+`A`
 : Enter INSERT mode at end of line
 
 ## Merge lines
 
 Use `J` to merge lines together. If you press `J` with nothing highlighted, it will remove the current line ending and white-space bringing the next line up. If multiple lines are highlighted, pressing `J` will merge them all into a single line.
 
-## Wrap Lines at Length
+
+## Delete lines
+
+The `global` command, `g` for short, applies a command on each line that matches the pattern.
+
+Using `d` as the command will delete the lines match the pattern. For example the following will delete all lines containing the word `pattern`
+
+```vim
+:g/pattern/d
+```
+
+Use `vglobal` to apply a command to each line that does *not* match the pattern, `v` for short. For example, to delete all lines that do not contain `pattern`
+
+```vim
+:v/pattern/d
+```
+
+
+## Wrap lines at length
 
 Use `gq` to wrap lines to a specified length defined by `textwidth`. If the `textwidth` option is not set the default is 79. I use this daily in commit messages to fit within 80 characters. To use, just highlight the lines you want and then type `gq`
 
-## Wrapped Line Navigation
+## Wrapped line navigation
 
 Wrapped line navigation can be weird in Vim. Since, one actual line wraps to multiple displayed lines. The `j` and `k` keys tells Vim to move to the next line, thus skipping over the wrapped lines.
 
