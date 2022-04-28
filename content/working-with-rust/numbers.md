@@ -82,3 +82,16 @@ let flt = num as f64;
 println!("{}", 1.2 * flt);
 println!("{}", 1.2 * num as f64);
 ```
+
+### Float to Integer
+
+Use the same `as` to cast a float to an integer type. By default, it will discard the decimal portion of the number giving you an equivalent of `floor()`. Use `.round()` or `.ceil()` prior to control how you want the float to be converted.
+
+```rs
+let num = 13.6 as f32;
+let i = num as i32;
+let j = num.round() as i32;
+let k = num.ceil() as i32;
+println!("{} {} {}", i, j, k);
+```
+
